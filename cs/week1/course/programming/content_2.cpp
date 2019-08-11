@@ -75,6 +75,7 @@ void updown_stairs_from_bottom_to_top_iteration(int stairs)
     }
 
     for (i = 4; i <= stairs; i++) {
+        // sum = 剩一级台阶 是的上法数 + 剩两级台阶~ + 剩三级台阶~
         sum = tmp_a + tmp_b + tmp_c;
         tmp_a = tmp_b;
         tmp_b = tmp_c;

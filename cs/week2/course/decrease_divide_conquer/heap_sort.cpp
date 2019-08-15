@@ -62,6 +62,9 @@ void process()
         g_heap[i] = val;
     }
 
+    /* 上面把大的依次从内存末尾往前放，这里遍历时从内存开头往
+       *   后遍历，所以仍然按从小到大输出
+       */
     for (i = 1; i <= g_cnt; i++) {
         printf("%d ", g_heap[i]);
     }
